@@ -1,0 +1,44 @@
+/* .header{
+
+} */
+
+.headerMobile_container {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerMobile_right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.headerMobile_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+}
+
+.headerMobile_logo {
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+}
+
+.headerMobile_left {
+  display: flex;
+  gap: 1.6rem;
+  height: 4rem;
+}
+

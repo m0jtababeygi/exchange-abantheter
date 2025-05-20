@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,20 +14,41 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+* {
+  box-sizing: border-box !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face{
+  font-family: 'IRANYekanXFaNum';
+  src: url('../../public/fonts/iranyekanwebregular(fanum).woff2') format('woff2'),
+      url('../../public/fonts/iranyekanwebregular(fanum).woff') format('woff'),
+      url('../../public/fonts/iranyekanwebregular(fanum).ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+
+  font-family: 'IRANYekanXFaNum', Segoe UI !important;
+  direction: rtl;
+  font-size: 1.6rem;
 }
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
