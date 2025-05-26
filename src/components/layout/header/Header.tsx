@@ -13,6 +13,10 @@ const Header = () => {
     console.log("login");
   };
 
+  const onRegisterHandler = () => {
+    console.log("register");
+  };
+
   return (
     <header className={classes.header}>
       <div></div>
@@ -81,7 +85,7 @@ const Header = () => {
             </Button>
           </a>
           <a href="">
-            <Button className="h-full" onClick={onLoginHandler}>
+            <Button className="h-full" onClick={onRegisterHandler}>
               ثبت نام
             </Button>
           </a>
@@ -107,30 +111,30 @@ const Header = () => {
 
           {/* آیتم‌های منو */}
           <nav className="flex flex-col gap-8 mb-6">
-            <a href="#" className="text-gray-800">
+            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
               قیمت لحظه ای
             </a>
-            <a href="#" className="text-gray-800">
+            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
               {" "}
               معامله فوری{" "}
             </a>
-            <a href="#" className="text-gray-800">
+            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
               {" "}
               اعتبار معاملاتی{" "}
             </a>
-            <a href="#" className="text-gray-800">
+            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
               {" "}
               اعتبار خرید کالا{" "}
             </a>
-            <a href="#" className="text-gray-800">
+            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
               {" "}
               بلاگ{" "}
             </a>
-            <a href="#" className="text-gray-800">
+            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
               {" "}
               سوالات متداول{" "}
             </a>
-            <a href="#" className="text-gray-800">
+            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
               {" "}
               قوانین و مقررات{" "}
             </a>
@@ -141,10 +145,14 @@ const Header = () => {
 
           {/* دکمه‌های ورود و ثبت نام */}
           <div className="mt-auto flex flex-col gap-3">
-            <Button className="w-full bg-blue-700 text-white">ورود</Button>
-            <Button className="w-full bg-white text-blue-700 border border-blue-700">
+            <a href="">
+              <Button className="w-full bg-white text-blue-500 border-blue-700 leading-loose" onClick={onLoginHandler}>ورود</Button>
+            </a>
+            <a href="">
+              <Button className="w-full bg-blue-700 text-white leading-loose"  onClick={onRegisterHandler}>
               ثبت نام
             </Button>
+            </a>
           </div>
         </div>
       )}
