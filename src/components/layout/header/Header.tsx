@@ -49,28 +49,28 @@ const Header = () => {
         </div>
 
         <nav className="hidden md:flex gap-6 items-center text-sm">
-          <a href="#" className="text-gray-800">
+          <a href="#" className="text-gray-800 text-lg">
             قیمت لحظه‌ای
           </a>
-          <a href="#" className="text-gray-800">
+          <a href="#" className="text-gray-800 text-base">
             معامله فوری
           </a>
-          <a href="#" className="text-gray-800">
+          <a href="#" className="text-gray-800 text-base">
             اعتبار معاملاتی
           </a>
-          <a href="#" className="text-gray-800">
+          <a href="#" className="text-gray-800 text-base">
             اعتبار خرید کالا
           </a>
-          <a href="#" className="text-gray-800">
+          <a href="#" className="text-gray-800 text-base">
             بلاگ
           </a>
-          <a href="#" className="text-gray-800">
+          <a href="#" className="text-gray-800 text-base">
             سوالات متداول
           </a>
-          <a href="#" className="text-gray-800">
+          <a href="#" className="text-gray-800 text-base">
             قوانین
           </a>
-          <a href="#" className="text-gray-800">
+          <a href="#" className="text-gray-800 text-base">
             تماس با ما
           </a>
         </nav>
@@ -111,34 +111,65 @@ const Header = () => {
 
           {/* آیتم‌های منو */}
           <nav className="flex flex-col gap-8 mb-6">
-            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
+            <a
+              href="#"
+              className="text-gray-800 border-b border-slate-100 pb-4"
+            >
               قیمت لحظه ای
             </a>
-            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
+
+            <a
+              href="#"
+              className="text-gray-800 border-b border-slate-100 pb-4"
+            >
               {" "}
               معامله فوری{" "}
             </a>
-            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
+
+            <a
+              href="#"
+              className="text-gray-800 border-b border-slate-100 pb-4"
+            >
               {" "}
               اعتبار معاملاتی{" "}
             </a>
-            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
+
+            <a
+              href="#"
+              className="text-gray-800 border-b border-slate-100 pb-4"
+            >
               {" "}
               اعتبار خرید کالا{" "}
             </a>
-            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
+
+            <a
+              href="#"
+              className="text-gray-800 border-b border-slate-100 pb-4"
+            >
               {" "}
               بلاگ{" "}
             </a>
-            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
+
+            <a
+              href="#"
+              className="text-gray-800 border-b border-slate-100 pb-4"
+            >
               {" "}
               سوالات متداول{" "}
             </a>
-            <a href="#" className="text-gray-800 border-b border-slate-100 pb-4">
+
+            <a
+              href="#"
+              className="text-gray-800 border-b border-slate-100 pb-4 text-base"
+            >
               {" "}
               قوانین و مقررات{" "}
             </a>
-            <a href="#" className="text-gray-800">
+
+            <a
+              href="#"
+              className="text-gray-800 border-b border-slate-100 pb-4 text-base"
+            >
               تماس با ما
             </a>
           </nav>
@@ -146,12 +177,20 @@ const Header = () => {
           {/* دکمه‌های ورود و ثبت نام */}
           <div className="mt-auto flex flex-col gap-3">
             <a href="">
-              <Button className="w-full bg-white text-blue-500 border-blue-700 leading-loose" onClick={onLoginHandler}>ورود</Button>
+              <Button
+                className="w-full bg-white text-blue-500 border-blue-700 leading-loose"
+                onClick={onLoginHandler}
+              >
+                ورود
+              </Button>
             </a>
             <a href="">
-              <Button className="w-full bg-blue-700 text-white leading-loose"  onClick={onRegisterHandler}>
-              ثبت نام
-            </Button>
+              <Button
+                className="w-full bg-blue-700 text-white leading-loose"
+                onClick={onRegisterHandler}
+              >
+                ثبت نام
+              </Button>
             </a>
           </div>
         </div>
