@@ -1,6 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faSun,
+  faXmark,
+  faMoon,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classes from "./Header.module.css";
 import Image from "next/image";
@@ -36,7 +41,7 @@ const Header = () => {
           </div>
 
           {/* لوگو */}
-          <div className={`${classes.headerMobile_logo} lg:hidden`} >
+          <div className={`${classes.headerMobile_logo} lg:hidden`}>
             <a href="" className="h-full w-full cursor-pointer">
               <Image
                 src="/img/primary-icon.svg"
@@ -46,7 +51,9 @@ const Header = () => {
               />
             </a>
           </div>
-          <div className={`${classes.headerDesktop_logo} relative h-20 w-56 hidden lg:block`}>
+          <div
+            className={`${classes.headerDesktop_logo} relative h-20 w-56 hidden lg:block`}
+          >
             <a href="" className="h-full w-full cursor-pointer">
               <Image
                 src="/img/main-persian.svg"
@@ -56,7 +63,7 @@ const Header = () => {
               />
             </a>
           </div>
-        </div> 
+        </div>
 
         <nav className="hidden lg:flex items-center justify-center gap-[2.5rem] text-sm">
           <a href="#" className="text-gray-800 text-base hover:text-blue-700">
@@ -77,10 +84,16 @@ const Header = () => {
           <a href="#" className="text-gray-800 text-base hover:text-blue-700">
             سوالات متداول
           </a>
-          <a href="#" className="text-gray-800 text-base hover:text-blue-700 hidden 2xl:inline">
+          <a
+            href="#"
+            className="text-gray-800 text-base hover:text-blue-700 hidden 2xl:inline"
+          >
             قوانین
           </a>
-          <a href="#" className="text-gray-800 text-base hover:text-blue-700 hidden 2xl:inline">
+          <a
+            href="#"
+            className="text-gray-800 text-base hover:text-blue-700 hidden 2xl:inline"
+          >
             تماس با ما
           </a>
         </nav>
@@ -99,6 +112,12 @@ const Header = () => {
               ثبت نام
             </Button>
           </a>
+          <div className="hidden lg:flex items-center justify-center w-20 hover:bg-slate-100">
+            <span className="cursor-pointer">
+              <FontAwesomeIcon icon={faSun} className="text-2xl" />
+              {/* <FontAwesomeIcon icon={faMoon} className="text-2xl" /> */}
+            </span>
+          </div>
         </div>
       </div>
 
@@ -186,9 +205,24 @@ const Header = () => {
 
           {/* دکمه‌های ورود و ثبت نام */}
           <div className="mt-auto flex flex-col gap-3">
+            {/* <div className=" leading-loose hover:bg-slate-100 flex justify-end"> */}
+            <span className="cursor-pointer leading-loose hover:bg-slate-100 flex justify-end">
+              <FontAwesomeIcon icon={faSun} className="text-2xl" />
+              {/* <FontAwesomeIcon icon={faMoon} className="text-2xl" /> */}
+            </span>
+            {/* </div> */}
+            <Button
+              className="w-full h-full bg-white text-black border-none cursor-pointer leading-loose"
+              onClick={onLoginHandler}
+            >
+              <span className="cursor-pointer leading-loose hover:bg-slate-100 flex justify-end">
+                <FontAwesomeIcon icon={faSun} className="text-2xl" />
+                {/* <FontAwesomeIcon icon={faMoon} className="text-2xl" /> */}
+              </span>
+            </Button>
             <a href="">
               <Button
-                className="w-full bg-white text-blue-500 border-blue-700 leading-loose"
+                className="w-full bg-white !text-blue-500 h-full transition hover:bg-blue-700 hover:!text-white leading-loose"
                 onClick={onLoginHandler}
               >
                 ورود
